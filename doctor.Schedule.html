@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="Picsart_23-01-27_00-06-00-337.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <!-- ========maintable======== -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.2/css/dataTables.foundation.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.4.0/css/responsive.foundation.min.css">
+
+
+ <script src="https://code.jquery.com/jquery-3.5.1.js"></script>  
+ <script src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script> 
+ <script src="https://cdn.datatables.net/1.13.2/js/dataTables.foundation.min.js"></script> 
+ <script src="https://cdn.datatables.net/responsive/2.4.0/js/dataTables.responsive.min.js"></script> 
+ <script src=" https://cdn.datatables.net/responsive/2.4.0/js/responsive.foundation.min.js"></script>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+    <link href="css/style.css" rel="stylesheet">
+   
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- navbar  -->
+<div class="container-fluid">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-12">
+              <nav class="navbar navbar-expand-lg navbar-dark  clr">
+<div class="container-fluid">
+  <img src="Picsart_23-01-27_00-06-00-337.png" alt="" height="80" width="90">
+  <h1 class="navbar-brand  head"><strong> CAMBRIDGE<br> HOSPITAL </strong></h1>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav ms-auto text-center">
+      <li class="nav-item items">
+        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+      </li>
+      <li class="nav-item dropdown items">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Centers
+        </a>
+        <ul class="dropdown-menu menuclr" aria-labelledby="navbarDropdownMenuLink">
+          <li><a class="dropdown-item nvtextclr" href="diagnostic-center.html">Diagnostic Center</a></li>
+          <li><a class="dropdown-item nvtextclr" href="Neurology.html">Neuro Center</a></li>
+          <li><a class="dropdown-item nvtextclr" href="heart-center.html">Heart Center</a></li>
+          <li><a class="dropdown-item nvtextclr" href="comunity health.html">Community center</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown items">
+        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Department
+        </a>
+        <ul class="dropdown-menu menuclr " aria-labelledby="navbarDropdownMenuLink">
+          <li><a class="dropdown-item nvtextclr active" href="doctor.Schedule.html">Doctor Schedule</a></li>
+          <li><a class="dropdown-item nvtextclr" href="appoint.html">Rgistration</a></li>
+          <li><a class="dropdown-item nvtextclr" href="billing.html">Account And Billing</a></li>
+        </ul>
+      </li>
+      <li class="nav-item items">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item items">
+        <a class="nav-link" href="contact.html">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+          </div>
+      </div>
+  </div>
+  <!-- breadcrumb -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+       <div class="breadcrumb">
+        <ul class="breadcrumb bread ">
+          <li class="breadcrumb-item">
+            <a class="a" href="index.html">HOME</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a class="a" href="facility.html">FACILTY</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a class="a" href="services.html">SERVICES</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a class="a" href="covid.html">COVID-19</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a class="a" href="feedback.html">FEEDBACK & QUERY</a>
+          </li>
+        </ul>
+       </div>
+      </div>
+    </div>
+  </div>
+      <!-- heading one -->
+      <div class="container bg-light border border-2">
+      <h1 class="title text-center">Doctor Schedule</h1>
+      <hr class="w-25 m-auto">
+      <div class="row my-5">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+    <table id="example"  class="display nowrap responsive " style="width: 100%;">
+        <thead>
+            <tr>
+                <th>Doctor Name</th>
+                <th>profession</th>
+                <th>Branch</th>
+                <th>Age</th>
+                <th>days</th>
+                <th>Timing</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Abdul shakoor</td>
+                <td>cancer </td>
+                <td>ch Cambridge hospital </td>
+                <td>61</td>
+                <td>wed to sat</td>
+                <td>12:00pm to 5:00pm</td>
+            </tr>
+            <tr>
+                <td>Garrett Winters</td>
+                <td>Lungs cancer</td>
+                <td>ch Cambridge hospital </td>
+                <td>61</td>
+                <td>mon-fri</td>
+                <td>2:00pm to 7:00pm</td>
+            </tr>
+            <tr>
+                <td>Ashton Cox</td>
+                <td>Heart</td>
+                <td>ch Cambridge hospital </td>
+                <td>61</td>
+                <td>mon to sun</td>
+                <td>4:00pm to 8:00pm</td>
+            </tr>
+            <tr>
+                <td>Cedric Kelly</td>
+                <td>Headaches</td>
+                <td>Newyork </td>
+                <td>61</td>
+                <td>wed to sat</td>
+                <td>12:00pm to 5:00pm</td>
+            </tr>
+            <tr>
+                <td>Airi Satou</td>
+                <td>nerulogist</td>
+                <td>ch Cambridge hospital </td>
+                <td>61</td>
+                <td>mon to sun</td>
+                <td>4:00pm to 8:00pm</td>
+            </tr>
+            <tr>
+                <td>Brielle Williamson</td>
+                <td>cancer</td>
+                <td>Pakistan </td>
+                <td>61</td>
+                <td>mon-fri</td>
+                <td>2:00pm to 7:00pm</td>
+            </tr>
+            <tr>
+                <td>Herrod Chandler</td>
+                <td>cancer</td>
+                <td>America </td>
+                <td>61</td>
+                <td>wed to sat</td>
+                <td>12:00pm to 5:00pm</td>
+            </tr>
+            <tr>
+                <td>Rhona Davidson</td>
+                <td>cancer</td>
+                <td>India </td>
+                <td>61</td>
+                <td>mon-fri</td>
+                <td>2:00pm to 7:00pm</td>
+            </tr>
+            <tr>
+                <td>Colleen Hurst</td>
+                <td>Stomach Aches.</td>
+                <td>London</td>
+                <td>61</td>
+                <td>wed to sat</td>
+                <td>12:00pm to 5:00pm</td>
+            </tr>
+            <tr>
+                <td>Sonya Frost</td>
+                <td>cancer</td>
+                <td>Newyork </td>
+                <td>61</td>
+                <td>mon to sun</td>
+                <td>4:00pm to 8:00pm</td>
+            </tr>
+            <tr>
+                <td>Jena Gaines</td>
+                <td>cancer</td>
+                <td>Pakistan </td>
+                <td>61</td>
+                <td>mon-fri</td>
+                <td>2:00pm to 7:00pm</td>
+            </tr>
+
+                <td>Olivia Liang</td>
+                <td>Headaches.</td>
+                <td>Singapore</td>
+                <td>64</td>
+                <td>wed to sat</td>
+                <td>12:00pm to 5:00pm</td>
+            </tr>
+            <tr>
+                <td>Bruno Nash</td>
+                <td>Allergies.</td>
+                <td>London</td>
+                <td>38</td>
+                <td>mon to sun</td>
+                <td>4:00pm to 8:00pm</td>
+            </tr>
+            <tr>
+                <td>Sakura Yamamoto</td>
+                <td>Colds and Flu.</td>
+                <td>Tokyo</td>
+                <td>37</td>
+                <td>wed to sat</td>
+                <td>12:00pm to 5:00pm</td>
+            </tr>
+            <tr>
+                <td>Thor Walton</td>
+                <td>Allergies.</td>
+                <td>New York</td>
+                <td>61</td>
+                <td>mon-fri</td>
+                <td>2:00pm to 7:00pm</td>
+            </tr>
+            <tr>
+                <td>Finn Camacho</td>
+                <td>Colds and Flu.</td>
+                <td>San Francisco</td>
+                <td>47</td>
+                <td>wed to sat</td>
+                <td>12:00pm to 5:00pm</td>
+            </tr>
+            <tr>
+                <td>Serge Baldwin</td>
+                <td>Allergies.</td>
+                <td>Singapore</td>
+                <td>64</td>
+                <td>mon to sun</td>
+                <td>4:00pm to 8:00pm</td>
+            </tr>
+            <tr>
+                <td>Zenaida Frank</td>
+                <td>Colds and Flu.</td>
+                <td>New York</td>
+                <td>63</td>
+                <td>mon-fri</td>
+                <td>2:00pm to 7:00pm</td>
+            </tr>
+            <tr>
+                <td>Zorita Serrano</td>
+                <td>Colds and Flu.</td>
+                <td>San Francisco</td>
+                <td>56</td>
+                <td>wed to sat</td>
+                <td>12:00pm to 5:00pm</td>
+            </tr>
+            <tr>
+                <td>Jennifer Acosta</td>
+                <td>Allergies.</td>
+                <td>Edinburgh</td>
+                <td>43</td>
+                <td>mon to sun</td>
+                <td>4:00pm to 8:00pm</td>
+            </tr>
+            <tr>
+                <td>Cara Stevens</td>
+                <td>Allergies.</td>
+                <td>New York</td>
+                <td>46</td>
+                <td>mon-fri</td>
+                <td>2:00pm to 7:00pm</td>
+            </tr>
+            <tr>
+                <td>Hermione Butler</td>
+                <td>Allergies.</td>
+                <td>London</td>
+                <td>47</td>
+                <td>wed to sat</td>
+                <td>12:00pm to 5:00pm</td>
+            </tr>
+            <tr>
+                <td>Lael Greer</td>
+                <td>Mononucleosis.</td>
+                <td>London</td>
+                <td>21</td>
+                <td>mon-fri</td>
+                <td>2:00pm to 7:00pm</td>
+            </tr>
+            <tr>
+                <td>Jonas Alexander</td>
+                <td>Mononucleosis.</td>
+                <td>San Francisco</td>
+                <td>30</td>
+                <td>wed to sat</td>
+                <td>12:00pm to 5:00pm</td>
+            </tr>
+            <tr>
+                <td>Shad Decker</td>
+                <td>Mononucleosis.</td>
+                <td>Edinburgh</td>
+                <td>51</td>
+                <td>mon-fri</td>
+                <td>2:00pm to 7:00pm</td>
+            </tr>
+            <tr>
+                <td>Michael Bruce</td>
+                <td>Mononucleosis.</td>
+                <td>Singapore</td>
+                <td>29</td>
+                <td>wed to sat</td>
+                <td>12:00pm to 5:00pm</td>
+            </tr>
+            <tr>
+                <td>Donna Snider</td>
+                <td>Mononucleosis.</td>
+                <td>New York</td>
+                <td>27</td>
+                <td>wed to sat</td>
+                <td>12:00pm to 5:00pm</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Doctor Name</th>
+                <th>profession</th>
+                <th>Branch</th>
+                <th>Age</th>
+                <th>days</th>
+                <th>Timing</th>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+</div>
+</div>
+
+<script>
+  $(document).ready(function(){
+   $('#example').DataTable();
+} );
+</script>
+<!-- guidlines -->
+<section class="bg-light p-4 my-2">
+  <div class="container">
+<h1 class="title text-center">Our Guidelines</h1>
+<hr class="w-25 m-auto">
+<div class="row">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+<h3 class="title">Our Mission</h3>
+<p>Healthcare facilities need to be efficiently planned, appropriately briefed, competently designed and quickly delivered. They need to be sustainable in every respect as an essential public service. Therefore they need to carefully balance the required features and standards against capital and operational costs without compromising the quality of care. Sustainability demands that the precious knowledge of healthcare design be shared rather than wasted after every successful project. These guidelines bring that shared knowledge to the world to achieve these key objectives:</p>
+<ul>
+  <li>Establish the minimum acceptable standards</li>
+  <li>Maintain public confidence in the facilities which comply with these guidelines</li>
+  <li>Provide guidance to designers on the special needs of healthcare facilities</li>
+  <li> Allow Health Authorities to require compliance with these guidelines</li>
+  <li>Provide a knowledge base to inform future healthcare design consultants</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+ <!-- footer -->
+  
+  <!-- Footer -->
+  <footer class="text-center text-lg-start clr text text-white text-white-50">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="bi bi-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+            <img src="Picsart_23-01-27_00-06-00-337.png" height="50" width="50" alt="">Cambridge Hospital
+            </h6>
+            <p>
+              hospital, an institution that is built, staffed, and equipped for the diagnosis of disease; for the treatment, both medical and surgical, of the sick and the injured; and for their housing during this process.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              I Want To...
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Find a Provider</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Find a Location</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Find a Service</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Make an Appointment</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Not a Patient?
+            </h6>
+            
+            <p>
+              <a href="comunity health.html" class="text-reset">CHA OLC / HealthStream</a>
+            </p>
+            <p>
+              <a href="facility.html" class="text-reset">Academics</a>
+            </p>
+            <p>
+              <a href="FEEDBACK-_-QUERY.html" class="text-reset">feedback</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact CH</h6>
+            <p><i class="bi bi-house-check-fill"></i> New York, NY 10012, US</p>
+            <p>
+              <i class="bi bi-envelope-check-fill"></i>
+              chcambridgehospital@gmail.com
+            </p>
+            <p><i class="bi bi-telephone-inbound-fill"></i> + 3456175110</p>
+            <p><i class="bi bi-telephone-inbound-fill"></i> + 3407386624 </p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      Copyright © 2023 CHA. All rights reserved
+      1493 Cambridge Street, Cambridge, Massachusetts 02139 US
+    </div>
+    <!-- Copyright -->
+  </footer>
+  </section>
+  <!-- Footer -->
+      <!-- main -->
+      </div>
+</body>
+</html>
